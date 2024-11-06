@@ -9,5 +9,10 @@ int main(int argc, char const *argv[])
 {
     
     int fd = open("io.txt", O_CREAT | O_WRONLY | O_APPEND, 0664);
+    if (fd)
+    {
+        /* code */
+    }
+    
     return 0;
 }
