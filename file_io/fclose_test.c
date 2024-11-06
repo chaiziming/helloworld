@@ -9,5 +9,13 @@ int main(int argc, char const *argv[])
     } else {
         printf("success to open\n");
     }
+
+    int result = fclose(ioFile);
+    if (result == EOF) {
+        printf("failed to close\n");
+    } else {
+        printf("success to close\n");
+    }
+
     return 0;
 }
