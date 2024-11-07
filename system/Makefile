@@ -65,3 +65,19 @@ shared_memery: shared_memery.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+	
+mq_test: mq_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+producer: producer.c
+	-$(CC) -o $@ $^
+
+consumer: consumer.c
+	-$(CC) -o $@ $^
+
+signal_test: signal_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
