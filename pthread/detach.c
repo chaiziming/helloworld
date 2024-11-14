@@ -12,7 +12,7 @@ void * task(void *arg) {
 
 int main(int argc, char const *argv[])
 {
-    pthread_t tid
+    pthread_t tid;
     pthread_create(&tid, NULL, task, NULL);
 
     //回收，detach 与 exit 不同的就是，detach的主线程不用等待子线程的完成
